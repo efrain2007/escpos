@@ -48,7 +48,7 @@ pub(crate) type Command = Vec<u8>;
 
 /// Instruction
 #[derive(Clone, PartialEq)]
-pub(crate) struct Instruction {
+pub struct Instruction {
     pub(crate) name: String,
     pub(crate) commands: Vec<Command>,
     pub(crate) debug_mode: Option<DebugMode>,
@@ -56,7 +56,7 @@ pub(crate) struct Instruction {
 
 impl Instruction {
     /// Create a new instruction
-    pub(crate) fn new(name: &str, commands: &[Command], debug_mode: Option<DebugMode>) -> Self {
+    pub fn new(name: &str, commands: &[Command], debug_mode: Option<DebugMode>) -> Self {
         Instruction {
             name: name.to_string(),
             commands: commands.to_vec(),
@@ -65,7 +65,7 @@ impl Instruction {
     }
 
     /// Get list of commands in the same Vec (flat)
-    pub(crate) fn flatten_commands(&self) -> Vec<u8> {
+    pub fn flatten_commands(&self) -> Vec<u8> {
         self.commands.iter().flatten().cloned().collect()
     }
 }

@@ -1,15 +1,15 @@
 [package]
-authors = ["Fabien Bellanger <valentil@gmail.com>"]
+authors = ["Fabien Bellanger <befrain411@gmail.com>"]
 description = "ESC/POS printer driver"
 documentation = "https://docs.rs/escpos"
 edition = "2021"
-homepage = "https://github.com/fabienbellanger/escpos-rs"
+homepage = "https://github.com/efrain2007/escpos.git"
 keywords = ["escpos", "printer", "driver", "pos", "usb"]
 license = "MIT"
 name = "escpos"
 readme = "README.md"
-repository = "https://github.com/fabienbellanger/escpos-rs"
-version = "0.6.0"
+repository = "https://github.com/efrain2007/escpos.git"
+version = "1.0.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

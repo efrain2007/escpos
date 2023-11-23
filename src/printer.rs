@@ -30,7 +30,7 @@ use log::debug;
 pub struct Printer<D: Driver> {
     driver: D,
     protocol: Protocol,
-    instructions: Vec<Instruction>,
+    pub instructions: Vec<Instruction>,
     debug_mode: Option<DebugMode>,
 }
 
